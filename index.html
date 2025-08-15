@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shoaib Ahmad">
+    <meta name="copyright" content="© 2025 Shoaib Ahmad">
+    <meta name="designer" content="Shoaib Ahmad">
+    <title>CareerConnect | Find Your Dream Job</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Career<span>Connect</span></a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#jobs" class="nav-link">Browse Jobs</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Account <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item" id="login-btn">Login</a>
+                            <a href="#" class="dropdown-item" id="register-btn">Register</a>
+                            <a href="#" class="dropdown-item" id="recruiter-btn">For Employers</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your <span>Dream Job</span> Today</h1>
+                <p>Join thousands of companies and job seekers using our platform to connect talent with opportunity.</p>
+                <div class="hero-btns">
+                    <a href="#jobs" class="btn btn-primary">Browse Jobs</a>
+                    <a href="#" class="btn btn-secondary" id="post-job-btn">Post a Job</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hero.png" alt="CareerConnect Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Search Section -->
+    <section class="job-search">
+        <div class="container">
+            <div class="search-box">
+                <form id="search-form">
+                    <div class="form-group">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Job title, keywords, or company">
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="City, state, or remote">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search Jobs</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Popular Job Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Software Development</h3>
+                    <p>1,240 Jobs Available</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Marketing</h3>
+                    <p>890 Jobs Available</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Business</h3>
+                    <p>1,520 Jobs Available</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design</h3>
+                    <p>760 Jobs Available</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Healthcare</h3>
+                    <p>1,150 Jobs Available</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <p>680 Jobs Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs Section -->
+    <section class="featured-jobs" id="jobs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Jobs</h2>
+                <div class="filter-options">
+                    <select id="job-filter">
+                        <option value="all">All Jobs</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="remote">Remote</option>
+                        <option value="contract">Contract</option>
+                    </select>
+                </div>
+            </div>
+            <div class="jobs-grid" id="jobs-container">
+                <!-- Jobs will be loaded here via JavaScript -->
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-outline">View All Jobs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create an Account</h3>
+                    <p>Register as a job seeker or employer in just a few simple steps.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Complete Your Profile</h3>
+                    <p>Job seekers upload resumes, employers create company profiles.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Find Your Match</h3>
+                    <p>Search jobs or candidates, apply or post opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"CareerConnect helped me find my dream job in just two weeks! The application process was so smooth and I got multiple interview requests."</p>
+                        <div class="testimonial-author">
+                            <img src="images/user1.jpg" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>UX Designer at TechCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As a recruiter, I've found the best talent through CareerConnect. The platform's matching system saves us so much time in the hiring process."</p>
+                        <div class="testimonial-author">
+                            <img src="images/user2.jpg" alt="Michael Chen">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <span>HR Director at InnovateCo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"After months of searching, I landed a remote position that perfectly matches my skills. The job alerts feature was incredibly helpful."</p>
+                        <div class="testimonial-author">
+                            <img src="images/user3.jpg" alt="David Martinez">
+                            <div>
+                                <h4>David Martinez</h4>
+                                <span>Full Stack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots"></div>
+                <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Take the Next Step in Your Career?</h2>
+            <p>Join thousands of professionals who found their dream jobs through CareerConnect.</p>
+            <div class="cta-btns">
+                <a href="#" class="btn btn-primary" id="cta-register">Register Now</a>
+                <a href="#" class="btn btn-outline-light">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CareerConnect</h3>
+                    <p>Connecting talent with opportunity since 2023. Our mission is to make job searching and hiring simple, efficient, and effective.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>For Job Seekers</h3>
+                    <ul>
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Job Alerts</a></li>
+                        <li><a href="#">Career Advice</a></li>
+                        <li><a href="#">Resume Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="#">Post a Job</a></li>
+                        <li><a href="#">Browse Candidates</a></li>
+                        <li><a href="#">Pricing Plans</a></li>
+                        <li><a href="#">Recruitment Solutions</a></li>
+                        <li><a href="#">Employer Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Career St, San Francisco, CA</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@careerconnect.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 CareerConnect | Designed & Developed by <a href="https://shoaibahmad.online" style="font-weight: bold; text-decoration: underline;">Shoaib Ahmad</a></p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#" id="switch-to-register">Register</a></p>
+                </div>
+            </form>
+            <div class="social-login">
+                <p>Or login with</p>
+                <div class="social-btns">
+                    <button class="btn-social google"><i class="fab fa-google"></i> Google</button>
+                    <button class="btn-social linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create Your Account</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm">Confirm Password</label>
+                    <input type="password" id="register-confirm" required>
+                </div>
+                <div class="form-group">
+                    <label>I am a:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="job-seeker" name="user-type" value="job-seeker" checked>
+                        <label for="job-seeker">Job Seeker</label>
+                        <input type="radio" id="employer" name="user-type" value="employer">
+                        <label for="employer">Employer</label>
+                    </div>
+                </div>
+                <div class="form-group terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#" id="switch-to-login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Recruiter Dashboard Modal -->
+    <div class="modal" id="recruiter-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Employer Login</h2>
+            <form id="recruiter-form">
+                <div class="form-group">
+                    <label for="company-email">Company Email</label>
+                    <input type="email" id="company-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company-password">Password</label>
+                    <input type="password" id="company-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <div class="form-footer">
+                    <p>New employer? <a href="#" id="employer-register">Create account</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Post Job Modal -->
+    <div class="modal" id="post-job-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Post a Job</h2>
+            <form id="post-job-form">
+                <div class="form-group">
+                    <label for="job-title">Job Title</label>
+                    <input type="text" id="job-title" placeholder="e.g. Senior Web Developer" required>
+                </div>
+                <div class="form-group">
+                    <label for="company-name">Company Name</label>
+                    <input type="text" id="company-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="job-location">Job Location</label>
+                    <input type="text" id="job-location" placeholder="City, State or Remote" required>
+                </div>
+                <div class="form-group">
+                    <label for="job-type">Job Type</label>
+                    <select id="job-type" required>
+                        <option value="">Select job type</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="contract">Contract</option>
+                        <option value="temporary">Temporary</option>
+                        <option value="internship">Internship</option>
+                        <option value="remote">Remote</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="job-category">Job Category</label>
+                    <select id="job-category" required>
+                        <option value="">Select category</option>
+                        <option value="software">Software Development</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="design">Design</option>
+                        <option value="business">Business</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="education">Education</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="job-salary">Salary Range</label>
+                    <input type="text" id="job-salary" placeholder="e.g. $80,000 - $100,000">
+                </div>
+                <div class="form-group">
+                    <label for="job-description">Job Description</label>
+                    <textarea id="job-description" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="job-requirements">Requirements</label>
+                    <textarea id="job-requirements" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="job-benefits">Benefits</label>
+                    <textarea id="job-benefits" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="application-email">Application Email/URL</label>
+                    <input type="text" id="application-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="closing-date">Closing Date</label>
+                    <input type="date" id="closing-date">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Post Job</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
